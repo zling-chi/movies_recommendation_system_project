@@ -30,9 +30,23 @@
 #### genome-scores.csv & genome-tags.csv  //标签基因组是一个数据结构，包含电影与标签的相关度分数。它是一个稠密矩阵：每部电影在基因组中对每个标签都有一个值。
 ##### 如[该文献][genome-paper]所述，标签基因组编码了电影在标签描述的属性上表现的强度（如“氛围感”、“发人深省”、“现实主义”等）。其基于用户贡献的标签、评分和文本评论，通过机器学习算法构建。
 #### genome-scores.csv  //电影-标签相关度
-####                             |—————  movieId
-####                             |—————  tagId  
-####                             |—————  relevance
+####               |—————  movieId
+####               |—————  tagId  
+####               |—————  relevance
 #### genome-tags.csv  //标签描述
-####                             |—————  tagId  //tagId 值可能在不同版本的数据集中不一致。
-####                             |—————  tag
+####               |—————  tagId  //tagId 值可能在不同版本的数据集中不一致。
+####               |—————  tag
+
+## 🧮数据预处理⬇️⬇️⬇️
+### 1.处理时间戳timestamp
+#### 将 ratings.csv 存在的时间戳转换为东八区具体时间，并新建列cst_time
+#### 删除timestamp和utc_time
+### 2.将csv文件合并
+### 3.提取电影标题title内括号的年份，新建列“year”
+### 4.生成新的csv文件movies_prepprocess.csv
+
+## 🔎explore⬇️⬇️⬇️
+### 将movies_preprocess.csv👉DataFrame
+### 获取数据的基本信息
+### 
+
