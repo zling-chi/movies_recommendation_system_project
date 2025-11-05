@@ -48,5 +48,6 @@
 ## 🔎explore⬇️⬇️⬇️
 ### 将movies_preprocess.csv👉DataFrame
 ### 获取数据的基本信息
-### 
+#### movies_preprocess.csv 共25627476行，电影共209171部，包含从 1874 年至 2019 年上映的影片，所有电影的平均评分在3.54星
+#### 
 
